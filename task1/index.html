@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Style -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Custom Style -->
+    <title>Task 1</title>
+    </head>
+    <body class="container" style="margin-top: 30px;">
+        <section style="margin-bottom: 20px;">
+            <button  type="button" class="btn btn-primary" id="showHide">Show form</button>
+        </section>
+        <form id="studentForm" class="border border-primary rounded-lg d-none" style="padding: 30px;">
+            <input placeholder="name" class="form-control" style="margin-bottom: 10px;" name="name">
+            <input placeholder="class" class="form-control" style="margin-bottom: 10px;" name="class">
+            <input placeholder="age" class="form-control" style="margin-bottom: 10px;" name="age">
+            <input placeholder="degree" class="form-control" style="margin-bottom: 10px;" name="degree">
+            <button  class="btn btn-success">Add student</button>
+        </form>
+        <table class="table table-borderd text-center" style="margin-top: 20px;">
+            <tr>
+                <th>#</th>
+                <th>name</th>
+                <th>class</th>
+                <th>age</th>
+                <th>degree</th>
+                <th>grade</th>
+                <th>actions</th>
+            </tr>
+            <tbody id="studentTable">
+            <tr>
+                <!-- <td>
+                    <button type="button" class="btn btn-danger">Delete student</button>
+                    <button type="button" class="btn btn-warning">Edit student</button>
+                </td> -->
+            </tr>
+            </tbody>
+        </table>
+        <script src="js/task1.js"></script>
+    </body>
+</html>
