@@ -82,4 +82,11 @@ yargs.command({
         myFun.showOne(argv.id)
     }
 })
+//show all customers
+yargs.command({
+    command:'showAll',
+    handler: function(){
+        myFun.showAll()
+    }
+})
 yargs.argv

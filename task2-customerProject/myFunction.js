@@ -69,10 +69,19 @@ const showOne = (id)=>{
     
 
 }
+//show all customers function
+const showAll = ()=>{
+    const customers = loadCus()
+    customers.forEach(cus => {
+        console.log(chalk.green.inverse(`id: ${cus.id}, name: ${cus.name}, balance: ${cus.balance}, status: ${cus.status}`))
+        
+    });
+}
 
 module.exports={
     addCus,
     deleteCus,
     addBalance,
-    showOne
+    showOne,
+    showAll
 }

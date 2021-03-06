@@ -102,7 +102,7 @@ const editStatus = (title)=>{
             id:tasks[index].id,
             title:tasks[index].title,
             content:tasks[index].content,
-            status:true
+            status:!tasks[index].status
         }
         saveTasks(tasks)
         console.log(chalk.blue.inverse('status has been updated'))
